@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <meta charset="UTF-8">
+    <title>Input</title>
+    <meta name="viewport" content="width=device-width, inital-scale=1.0">
+    <link rel="stylesheet" href="input.css">
+  </head>
+  <body>
+    <div id="input-page">
+      <div id="info-text">Please input the Bar Code's <br> numbers (No need to put spaces) <br>  </div>
+      <input id="input-box" type="text" maxlength="126" placeholder="Input here" oninput="myInput()"></input>
+      <div id="output-title">You inputted:</div>
+      <div id="output-text"> </div>
+      <img id="ok-button" src="../assets/img/inputPage-check-mark.png" alt="" onclick="saveAndExit()">
+
+    </div>
+      <script type="text/javascript" src="./input.js"></script>
+  </body>
+</html>

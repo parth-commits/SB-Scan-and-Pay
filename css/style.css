@@ -1,0 +1,101 @@
+@font-face {
+    font-family: "ManropeBold";
+    src: url("../assets/fonts/Manrope-Bold.ttf") format("truetype");
+}
+@font-face {
+    font-family: "test";
+    src: url("../assets/fonts/brushScriptMt.ttf") format("truetype");
+}
+@font-face {
+    font-family: "Poppins";
+    src: url("../assets/fonts/Poppins-Bold.ttf") format("truetype");
+}
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+@keyframes opacityFadeIn { 
+    from { 
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+#landing-page {
+    width: 360px;
+    height: 360px;
+    border-radius: 50%;
+    background-color: #00704A;
+    /*background-color: #27251F;*/
+    overflow: hidden;
+    user-select: none;
+}
+#app-img-title {
+    height: 40px;
+    width: 320px;
+    margin-left: 20px;
+    animation: opacityFadeIn 0.5s ease-in;
+    margin-top: 15px;
+}
+#app-title-2 {
+    color: #ffffff;
+    /*color: #27251F;*/
+    margin: auto;
+    width: fit-content;
+    font-size: 20px;
+    line-height: 20px;
+    padding-top: 0px;
+    text-align: center;
+    font-family: 'Poppins', "test";
+    animation: opacityFadeIn 0.5s ease-in;
+}
+#landing-img {
+    height: 120px;
+    width: 120px;
+    margin: auto;
+    background-color: transparent;
+    margin-top: 30px;
+    position: relative;
+    animation: opacityFadeIn 0.5s ease-in;
+}
+#landing-img-img {
+    height: 120px;
+    width: 120px;
+}
+
+.landing-buttons {
+    width: 65px;
+    animation: opacityFadeIn 0.5s ease-in;
+}
+.landing-buttons-list {
+    display: inline;
+    width: fit-content;
+    margin: auto;
+}
+.landing-buttons-list li {
+    display: inline;
+    width: fit-content;
+    height: fit-content;
+    padding: 5px;
+}
+#landing-buttons-div {
+    width: fit-content;
+    margin: auto;
+    margin-top: 5px;
+    padding-top: 5px;
+    border-radius: 35px;
+}
+.links {
+    text-decoration: none;
+    width: fit-content;
+    height: fit-content;
+}

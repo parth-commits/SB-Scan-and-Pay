@@ -1,0 +1,71 @@
+@font-face {
+    font-family: "ManropeMedium";
+    src: url("../assets/fonts/Manrope-Medium.ttf") format("truetype");
+}
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+
+@keyframes opacityFadeIn { 
+    from { 
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+#card-page {
+    width: 360px;
+    height: 360px;
+    border-radius: 50%;
+    background-color: #00704A;
+    user-select: none;
+    overflow: hidden;
+    position: relative;
+    scroll-snap-type: y mandatory;
+}
+#help-button {
+    width: 60px;
+    margin: auto;
+    position: absolute;
+    left: 130px;
+    top: 100px;
+    margin-top: 10px;
+    animation: opacityFadeIn 0.5s ease-in;
+    cursor: pointer;
+}
+#qrcode-holder {
+    width: 320px;
+    height: 120px;
+    margin: auto;
+    top: 120px;
+    animation: opacityFadeIn 0.5s ease-in;
+    background-color: transparent;
+    position: relative;
+}
+#code {
+    width: 300px;
+    height: 100px;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+#no-code {
+    width: 320px;
+    height: 106.67px;
+    position: relative;
+    margin: auto;
+    left: 0px;
+    top: 10px;
+}
+.link {
+    height: 60px;
+}
