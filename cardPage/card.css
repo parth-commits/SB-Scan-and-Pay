@@ -1,6 +1,6 @@
 @font-face {
-    font-family: "ManropeMedium";
-    src: url("../assets/fonts/Manrope-Medium.ttf") format("truetype");
+    font-family: "ManropeBold";
+    src: url("../assets/fonts/Manrope-Bold.ttf") format("truetype");
 }
 html{
     scroll-behavior: smooth;
@@ -68,4 +68,20 @@ html{
 }
 .link {
     height: 60px;
+}
+#temp-text {
+    width: 360px;
+    transform: rotate(180deg);
+    color: red;
+    font-size: 25px;
+    font-family: "ManropeBold";
+    text-align: center;
+}
+#temp-subtext {
+    width: 360px;
+    transform: rotate(180deg);
+    color: red;
+    font-size: 15px;
+    font-family: "ManropeBold";
+    text-align: center;
 }

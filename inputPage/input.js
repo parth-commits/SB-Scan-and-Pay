@@ -8,11 +8,17 @@ function saveAndExit() {
 function myInput(){
     let str = document.getElementById('input-box').value;
     let y = str.replace(/\s/g,'');
-    document.getElementById('output-text').innerHTML = y;
     theCodeText = y;
+    document.getElementById('output-text').innerHTML = spaceOut(y);
 }
 
-// personal replace function
-String.prototype.replaceAt = function(index, replacement) {
-    return this.substr(0, index) + replacement + this.substr(index + replacement.length);
+function spaceOut(s) {
+    let temp = '';
+    for (let i = 0; i < s.length; i++) {
+        if (i%4 == 0) {
+            temp = temp + ' ';
+        }
+        temp = temp + s[i];
+    }
+    return temp
 }
